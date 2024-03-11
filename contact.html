@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
 </head>
 <body>
-    <header align="center">
-        <h1>
-          <img  src="/Image/Albadrawi-logo.png" alt="Albadrawi" width="80px" align="center"/>
-        <font face="Arial" size="6" color="orange"><u>Albadrawi</u></font>
-    </h1>
-    </header>
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <nav align="center">
-        <font face="Arial" size="4">
-          <ul>
-            <a href="index.html">Start</a> &nbsp;&nbsp;&nbsp;
-            <a href="cv.html">Lebenslauf</a> &nbsp;&nbsp;&nbsp;
-            <a href="contact.html">Kontakt</a> &nbsp;&nbsp;&nbsp;
-          </ul>
-        </font>
+    <header>
+        <img class="imgheader" src="/Image/Albadrawi-logo.png" alt="Albadrawi-logo"/>
+      <nav>
+        <a href="index.html">start</a> 
+        <a href="cv.html">lebenslauf</a> 
+        <a href="contact.html">kontakt</a>
       </nav>
-    <!--kontakt info-->
+  </nav>
+</header>
+    <div class="contact-container">
+        <h1>Kontaktiere mich</h1>
 
-    <table  align="center" width="50%" bgcolor="#f8f8ff ">
-      <td>
-          <h2 align="center"><u>Kontakt</u></h2>
+        <form action="https://formspree.io/f/mzbngzzw" method="POST">
+            <div class="form-group">
+                <label for="name">Dein Name ist:</label>
+                <input type="name" id="name" name="name" required>
 
-    <p align="center">Email:<mark>Albadrawi.me@gmail.com</mark></p>
-    <p align="center">Telefon:<mark>01628136116</mark></p>
+                <label for="email">Dein Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-
-
-         </td>
-      </table>
-
-      <br> <br>
-    <hr>
-    <footer align="center">
+            <div class="form-group">
+                <label for="message">Dein Nachricht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+<div>
+    <label>
+        Your file:
+        <input type="file" name="upload">
+      </label>
+</div>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+    <footer >
         <p>© 2024 Albadrawi</p>
     </footer>
-  </body>
+
+<!--     <script src="script.js"></script>
+ -->
 </body>
 </html>
