@@ -30,6 +30,7 @@ nav a {
   color: #ecf0f1;
   font-weight: bold;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 nav a:hover {
