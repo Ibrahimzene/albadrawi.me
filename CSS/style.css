@@ -6,8 +6,16 @@
   font-style: normal;
   box-sizing: border-box;
 }
-
-#mode-icon {
+/* Dunkel und Hell hintergrundfarbe */
+:root {
+  --primary-color: #222;
+  --secondary-color: #edf2ed;
+}
+.dark-theme {
+  --primary-color: #222;
+  --secondary-color: #edf2ed;
+}
+#modeicon {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -21,8 +29,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #191919;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 #header {
   width: 100%;
@@ -50,7 +58,7 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -84,7 +92,7 @@ nav ul li a:hover::after {
 /* --------about------ */
 #about {
   padding: 80px 0;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .row {
   display: flex;
@@ -103,7 +111,7 @@ nav ul li a:hover::after {
 }
 .sub-title {
   font-size: 30px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .tab-title {
   display: flex;
@@ -154,7 +162,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .services-list div {
-  background: #2b2b2b;
+  background: #333;
   padding: 40px;
   font-size: 14px;
   font-weight: 300;
@@ -172,14 +180,14 @@ nav ul li a:hover::after {
 }
 .services-list div a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
 }
 .services-list span {
   font-size: 35px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .services-list div:hover {
   background: #e3651d;
@@ -235,7 +243,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 14px;
   line-height: 60px;
-  background: #fff;
+  background: var(--secondary-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -254,7 +262,7 @@ nav ul li a:hover::after {
   border: 1px solid #e3651d;
   padding: 14px 50px;
   border-radius: 6px;
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: background 0.5s;
 }
@@ -283,7 +291,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: #333;
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -303,8 +311,8 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
-  color: #fff;
+  background: #333;
+  color: var(--secondary-color);
   padding: 15px;
   margin: 15px 0;
   font-size: 18px;
@@ -320,7 +328,7 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 30px 0;
-  background: #262626;
+  background: #333;
   font-weight: 300;
   margin: 20px 0;
   display: flex;
