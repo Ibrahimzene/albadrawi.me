@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+#mode-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+/* Das nav ul style ist verbesserung das menü plasst */
+nav ul {
+  flex: 1;
+  text-align: right;
+}
 html {
   scroll-behavior: smooth;
 }
