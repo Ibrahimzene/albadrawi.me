@@ -92,7 +92,7 @@ nav ul li a:hover::after {
 /* --------about------ */
 #about {
   padding: 80px 0;
-  color: var(--secondary-color);
+  color: #edf2ed;
 }
 .row {
   display: flex;
@@ -111,7 +111,7 @@ nav ul li a:hover::after {
 }
 .sub-title {
   font-size: 30px;
-  color: var(--secondary-color);
+  color: #edf2ed;
 }
 .tab-title {
   display: flex;
@@ -180,14 +180,14 @@ nav ul li a:hover::after {
 }
 .services-list div a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: #edf2ed;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
 }
 .services-list span {
   font-size: 35px;
-  color: var(--secondary-color);
+  color: #edf2ed;
 }
 .services-list div:hover {
   background: #e3651d;
@@ -243,7 +243,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 14px;
   line-height: 60px;
-  background: var(--secondary-color);
+  background: #edf2ed;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -312,7 +312,7 @@ form textarea {
   border: 0;
   outline: none;
   background: #333;
-  color: var(--secondary-color);
+  color: #edf2ed;
   padding: 15px;
   margin: 15px 0;
   font-size: 18px;
